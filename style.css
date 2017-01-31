@@ -1,0 +1,30 @@
+.container {
+  padding: 0 15px;
+}
+.main-header .top {
+  padding: 26px 0 21px;
+}
+.main-header .top .left-block .lang-changer {
+  margin-right: 30px;
+}
+.main-header .top .left-block .search-block {
+  padding: 0;
+}
+.main-header .top .center-block .social-link {
+  margin-right: 10px;
+}
+.main-header .top .right-block .registration-block {
+  margin-right: 33px;
+}
+.main-header .top .right-block .sighin-block {
+  padding: 0;
+}
+.main-header .middle .header-logo {
+  padding: 0;
+}
+.main-header .middle .header-title {
+  padding: 0;
+}
+.main-header .bottom {
+  padding: 28px 23px;
+}

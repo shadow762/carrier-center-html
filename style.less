@@ -4,6 +4,7 @@
 @fieldBackgroundColor: #a5bfde;
 @fieldTextColor: #fff;
 @fieldTextSize: 20px;
+@descriptionBackground: #f7f7f7;
 /**functions**/
 .placeholder(@rules) {
 
@@ -46,6 +47,14 @@ a{
   padding: 0 15px;
   margin: 0 auto;
   width: 1170px;
+}
+.block-header{
+  margin: 46px 0;
+  font-size: 36px;
+  text-align: center;
+  &>*{
+    margin: 0;
+  }
 }
 /**header**/
 .main-header{
@@ -162,3 +171,50 @@ a{
   }
 }
 /**header end**/
+/**description block**/
+.description-block{
+  padding: 48px 0 54px;
+  background: @descriptionBackground;
+  p{
+    text-align: center;
+    margin: 0;
+    &::before, &::after{
+      content: '';
+      height: 5px;
+      width: 360px;
+      background: @borderColor;
+      display: block;
+    }
+    &::before{
+      margin: 0 auto 17px;
+    }
+    &::after{
+      margin: 18px auto 0;
+    }
+  }
+}
+/**news block**/
+.news-block{
+  content: '';
+  .news-item-container{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .news-item{
+      background: blue;
+      width: 229px;
+      .news-item-img{
+        max-height: 228px;
+        overflow: hidden;
+        margin-bottom: 29px;
+        &>img{
+          width: 100%;
+        }
+      }
+      .news-item-header{
+        content: '';
+      }
+    }
+  }
+}
